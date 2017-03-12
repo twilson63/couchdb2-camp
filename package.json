@@ -1,0 +1,14 @@
+{
+  "name": "couchdb2",
+  "description": "couchdb2 workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "codecampkit": "^2.4.5"
+  },
+  "scripts": {
+    "start": "cck"
+  }
+}
