@@ -53,5 +53,5 @@ http://docs.couchdb.org/en/2.0.0/maintenance/compaction.html?highlight=Compactio
 
 ---
 
-* [Exercises](./4-advanced/exercises)
+* [Exercises](exercises)
 * [Index](../)

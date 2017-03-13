@@ -142,5 +142,5 @@ response
 
 ---
 
-* [Exercises](./1-basics/exercises)
+* [Exercises](exercises)
 * [Index](../)

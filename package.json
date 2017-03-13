@@ -2,7 +2,7 @@
   "name": "couchdb2",
   "description": "couchdb2 workshop",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.md",
   "repository": {},
   "license": "MIT",
   "dependencies": {

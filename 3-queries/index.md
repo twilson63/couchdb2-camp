@@ -21,5 +21,5 @@ http://docs.couchdb.org/en/2.0.0/couchapp/views/joins.html?highlight=joins
 
 ---
 
-* [Exercises](./3-queries/exercises)
+* [Exercises](exercises)
 * [Index](../)

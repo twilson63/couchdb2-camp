@@ -1,3 +1,3 @@
-<footer class="pa3">
+<footer class="pa4">
 All Rights Reserved.
 </footer>

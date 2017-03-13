@@ -73,5 +73,5 @@ http://docs.couchdb.org/en/2.0.0/api/database/changes.html
 
 ---
 
-* [Exercises](./2-bulkdocs/exercises)
+* [Exercises](exercises)
 * [Index](../)
