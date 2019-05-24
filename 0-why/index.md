@@ -1,4 +1,4 @@
-## Why CouchDB 2.0?
+## Why CouchDB?
 
 > CouchDB is bad at everything except replication - Jason Smith
 
@@ -6,8 +6,8 @@
 * Resilient
 * Document Database
 * http only driver
-* changes feed
 * open source
+* changes feed
 
 ---
 

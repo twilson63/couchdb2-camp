@@ -1,6 +1,6 @@
 # Exercises
 
-Using Postman and do the following:
+Using jsonic.dev lets do the following exercises:
 
 1. Create a Database called games
 

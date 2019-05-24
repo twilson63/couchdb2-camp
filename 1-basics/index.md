@@ -1,7 +1,9 @@
 ### Setting up CouchDB
 
-- Docker `docker run -d -p 5984:5984 klaemo/couchdb:2.0-dev --with-haproxy --with-admin-party-please -n 1`
-- Windows https://dl.bintray.com/apache/couchdb/win/2.0.0.1/apache-couchdb-2.0.0.1.msi
+- Docker `docker run -d -p 5984:5984 --name couchdb couchdb`
+
+> If you are not able to install docker on windows, then you can install couchdb from the downloads page: http://couchdb.apache.org/
+
 
 ### Working with Databases
 

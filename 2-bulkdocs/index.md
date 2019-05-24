@@ -60,16 +60,57 @@ optional transaction mode - all_or_nothing: true
 
 ### Replication
 
-https://pouchdb.com/guides/replication.html
+It is easy to replicate with couch, solving conflicts is not easy, but couch does the right thing and gives the developer control of the solution. Why replicate? 
 
-### Conflicts
+* Get data as close to the user as possible
+* Give the user offline support
+* Aggregate data to central datastore
+* Move data from one location to another
+
+#### How to replicated data using the api
+
+`POST /db/_replicate`
+
+or
+
+`POST /_replicator` - persisted version 
+
+> Supports the following attributes: `_id`, `source`, `target`, `filter`, `query_params`, `doc_ids`, `create_target`, `continuous`, `use_checkpoints`, `checkpoint_interval`
+
+```
+{
+    "_id": "my_rep",
+    "source": "http://myserver.com/foo",
+    "target":  "http://user:pass@localhost:5984/bar",
+    "create_target":  true,
+    "continuous": true
+}
+```
+
+We can find the status of a replication by performing a 
+
+`GET /_scheduler/jobs`
+
+
+
+### Conflict Strategies
+
+When having multiple write sources, you will have conflicts, so you need to manage them. Here are a couple of strategies:
 
 - upsert
 - delta strategy
 
+http://docs.couchdb.org/en/stable/replication/conflicts.html#working-with-conflicting-documents
+
+
 ### Changes Feed
 
-http://docs.couchdb.org/en/2.0.0/api/database/changes.html
+The changes feed allows you to retrieve a list of the changes that have occured in the database, adds, updates, and deletes.
+
+https://docs.couchdb.org/en/stable/api/database/changes.html?highlight=Changes
+
+There are three modes, continous, long polling, and event source. Event Source events can be consumed by the browser in the form of DOM events.
+
 
 ---
 
