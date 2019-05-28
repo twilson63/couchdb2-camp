@@ -1,0 +1,42 @@
+{
+  "name": "CouchDB-Workshop",
+  "description": "CouchDB Workshop Videos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^2.1.5",
+    "date-fns": "^1.30.1",
+    "marked": "^0.6.2",
+    "ramda": "^0.26.1",
+    "shelljs": "^0.8.3",
+    "svelte": "^3.0.0",
+    "yaml-front-matter": "^4.0.0"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "now-build": "node build.js",
+    "dev": "run-p build w3",
+    "w3": "w3 dist",
+    "test": "tape test/index.js",
+    "css-build": "node-sass --omit-source-map-url sass/global.scss dist/global.css"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "rewire": "^4.0.1",
+    "tape": "^4.10.1",
+    "w3": "^2.0.0"
+  },
+  "meta": {
+    "title": "CouchDb Workshops Videos",
+    "description": "Get started with the database of the web",
+    "author": {
+      "name": "Tom Wilson",
+      "twitter": "@twilson63",
+      "avatar": "https://s.gravatar.com/avatar/eaee4a968ac2e346ec28faf0c46ffdc7?s=80",
+      "bio": "A developer who is passionate about learning and teaching, loves JavaScript, SvelteJS, NodeJS, and CouchDb"
+    }
+  }
+}
